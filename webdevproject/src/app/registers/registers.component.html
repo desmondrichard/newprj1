@@ -1,0 +1,54 @@
+<div style="background-color:aquamarine">
+    <div>
+        <h3 class = "text-center">{{message}}</h3>  <!--used interpolation to display corresponding name(reg.comp.ts {{message}})-->
+    </div>
+    
+    <div class="container bgimg1">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <h4 class="mt-4 mb-4">Registration Form -2022</h4>
+                <form>
+                    <fieldset>
+                        
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" [(ngModel)]="user.username" id="username" class="form-control"
+                                placeholder="Enter your username" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" name="firstname" [(ngModel)]="user.firstname" id="firstname" class="form-control"
+                                placeholder="Enter your firstname" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" name="lastname" [(ngModel)]="user.lastname" id="lastname" class="form-control"
+                                placeholder="Enter your lastname" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" name="age" [(ngModel)]="user.age" id="age" class="form-control"
+                                placeholder="Enter your age" required>
+                        </div>
+                        <br> 
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" name="password" [(ngModel)]="user.password" id="password" class="form-control"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit" value="Register" (click)="registerNow()">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    
+

@@ -1,0 +1,30 @@
+<div style="background-color:lightsalmon">
+    <div class=" container mt-5 bgimg3">
+        <div class=" col-lg-12 col-sm-12 col-xs-12">
+        <table class=" table table-striped">
+            <thead class="bg-dark text-light">
+                <tr>
+                    <td>Studentname</td>
+                    <td>Firstname</td>
+                    <td>Lastname</td>
+                    <td>Age</td>
+                    <td>Password</td>
+                    <td>Remove Student</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users"> <!--users is an object to get and display one by one-->
+                    <td>{{user.username}}</td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.password}}</td>
+                    <td><button class="btn btn-danger" (click)="removeUser(user.username)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+    
+    

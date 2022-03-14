@@ -1,0 +1,35 @@
+<div style="background-color: darkkhaki;">
+<div class=" container bgimg2">
+    <div class="row  mt-5">
+        <div class="col-lg-9 col-sm-12 col-xs-12">
+            <input type="text" placeholder="enter you full name" class="form-control" name="username" [(ngModel)]="username">
+        </div>
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+            <button type="button" class="btn btn-info" (click)="findByUsername()">search</button>
+        </div>
+    </div>
+    <h2 class="mt-5 mb-4 display-4">Result</h2>
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Student Full Name</td>
+                    <td>Firstname</td>
+                    <td>Lastname</td>
+                    <td>Age</td>
+                    <td>Password</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>{{user.username}}</td> <!--matching username with username specific details-->
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.password}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
